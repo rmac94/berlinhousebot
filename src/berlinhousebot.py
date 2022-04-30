@@ -31,7 +31,7 @@ class ImmoBerlinScrape:
                 New property Available: {residential_property['resultlist.realEstate']['title']}
                 {self.url}
                 """
-                # self.bot.send_telegram_message(message)
+                self.bot.send_telegram_message(message)
                 self.historic_ids.append(residential_property['@id'])
 
     def _save_records(self):
