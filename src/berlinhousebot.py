@@ -13,7 +13,10 @@ class ImmoBerlinScrape:
         with open(self.historic_id_fp, 'r') as file:
             self.historic_ids = [x.rstrip() for x in file.readlines()]
             file.close()
-        self.bot = telegram.BotInstance(r'C:\Users\ronan\OneDrive\Desktop\ImmoBerlinBot.ini')
+        self.bot = telegram.BotInstance(os.path.join(
+                                                    os.path.expanduser('~'),
+                                                    'ImmoBerlinBot.ini')
+        )
 
     def _get_html(self):
         headers = {
