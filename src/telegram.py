@@ -1,5 +1,6 @@
 import configparser
 import json
+import os
 
 import requests
 
@@ -34,5 +35,8 @@ class BotInstance:
 
 
 if __name__ == "__main__":
-    bot = BotInstance(r'C:\Users\ronan\OneDrive\Desktop\ImmoBerlinBot.ini')
+    bot = BotInstance(os.path.join(
+                                    os.path.expanduser('~'),
+                                    'ImmoBerlinBot.ini')
+    )
     bot.send_telegram_message("Hello world")
