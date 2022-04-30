@@ -10,7 +10,7 @@ class ImmoBerlinScrape:
     def __init__(self):
         self.url = "https://www.immobilienscout24.de/Suche/shape/wohnung-mit-einbaukueche-mieten?shape=bWBuX0lxZGBwQWhxQ3l9Q35oRmJqQX5gQG1zRXloQW1gUWRCfX1Fb3hAc2tJY2NJcGhEb25FbEVrekFob0Z1W3hwTnBjQGJiRGpjRH5qRmBMfGdB&numberofrooms=2.0-&price=-1650.0&livingspace=60.0-&exclusioncriteria=swapflat&pricetype=calculatedtotalrent&sorting=2"
         self.historic_id_fp = os.path.join(Path(__file__).parent.parent, 'historic_ids')
-        with open(self.historic_id_fp, 'w') as file:
+        with open(self.historic_id_fp, 'r+') as file:
             self.historic_ids = [x.rstrip() for x in file.readlines()]
             file.close()
         self.bot = telegram.BotInstance(os.path.join(
