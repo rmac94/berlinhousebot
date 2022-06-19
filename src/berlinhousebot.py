@@ -62,7 +62,9 @@ class ImmoBerlinScrape:
 
 
 if __name__ == "__main__":
-    for url in ["https://www.immobilienscout24.de/Suche/shape/wohnung-mit-einbaukueche-mieten?shape=bWBuX0lxZGBwQWhxQ3l9Q35oRmJqQX5gQG1zRXloQW1gUWRCfX1Fb3hAc2tJY2NJcGhEb25FbEVrekFob0Z1W3hwTnBjQGJiRGpjRH5qRmBMfGdB&numberofrooms=2.0-&price=-1650.0&livingspace=60.0-&exclusioncriteria=swapflat&pricetype=calculatedtotalrent&sorting=2",
-                "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/berlin/anzeige:angebote/c203l3331+wohnung_mieten.qm_d:65.00%2C+wohnung_mieten.swap_s:nein+wohnung_mieten.zimmer_d:2.5%2C"]:
+    for url in [#"https://www.immobilienscout24.de/Suche/shape/wohnung-mit-einbaukueche-mieten?shape=bWBuX0lxZGBwQWhxQ3l9Q35oRmJqQX5gQG1zRXloQW1gUWRCfX1Fb3hAc2tJY2NJcGhEb25FbEVrekFob0Z1W3hwTnBjQGJiRGpjRH5qRmBMfGdB&numberofrooms=2.0-&price=-1650.0&livingspace=60.0-&exclusioncriteria=swapflat&pricetype=calculatedtotalrent&sorting=2",
+                #"https://www.immobilienscout24.de/Suche/shape/wohnung-mieten?shape=Y3BnX0lleXJwQWpvQHdYYkh7Wj9lbkBuST9yUnlnQGRVeWNCcEVrX0FlQH14QW5BfEBxQX1FQX1Ec0FtQHNBY0Y-YWxAX1BlbkBpYkBrYUBrXmdDX0xxRXFFeVpxZ0BrbkFlVXFHb1ZmQ31DeE9nc0BpQH1Bd0NtQ3BDfUhHYkhgQHNOYE9xRXdYb1Z7WnNVfkRtRmNHZWZAP2diQGJQaUB6S35DbEV1Qj97Qm5UekJsakNkSG5jQGRVZG5AZmJAaEM-dGFCfk9mbEF6Qnx4QD94ZUF3SmxUP2Bdak1oYUB0TnpLO3dudV9JeXp1cEF2ZkFlX0B2W2diRWNIa31Bc3BAdXRAe1NsRXlkQGJ5QWtqQHZtQ2RUcn5C&numberofrooms=2.0-&price=-1700.0&exclusioncriteria=swapflat&pricetype=rentpermonth&sorting=2&enteredFrom=result_list#/",
+                "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/berlin/anzeige:angebote/c203l3331+wohnung_mieten.qm_d:65.00%2C+wohnung_mieten.swap_s:nein+wohnung_mieten.zimmer_d:2.5%2C"
+                ]:
         immo_instance = ImmoBerlinScrape(url=url)
         immo_instance.update()
